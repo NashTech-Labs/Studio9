@@ -1,6 +1,6 @@
-[![GitHub stars](https://img.shields.io/badge/Stars-5-blue)](https://github.com/knoldus/Studio-9/stargazers)
-[![GitHub contributors](https://img.shields.io/badge/Contributors-6-yellow)](https://github.com/knoldus/Studio-9/graphs/contributors)
-[![MIT License](https://img.shields.io/github/license/digitalocean/nginxconfig.io.svg?color=blue)](https://github.com/knoldus/Studio-9/blob/master/LICENSE.md)
+[![GitHub stars](https://img.shields.io/badge/Stars-5-blue)](https://github.com/NashTech-Labs/Studio-9/stargazers)
+[![GitHub contributors](https://img.shields.io/badge/Contributors-6-yellow)](https://github.com/NashTech-Labs/Studio-9/graphs/contributors)
+[![MIT License](https://img.shields.io/github/license/digitalocean/nginxconfig.io.svg?color=blue)](https://github.com/NashTech-Labs/Studio-9/blob/master/LICENSE.md)
 
 
 
@@ -81,7 +81,7 @@ So for deploying the Studio-9 on local, we have to understand the sequence of th
   Here we need one more machine so for this we will create a VM on local machine by using Vagrant because mesos-marathon cluster work on master slave architecture.
   
   ## **Vagrant**
-  [Deploying Vagrant on local](https://blog.knoldus.com/creating-virtual-machines-using-vagrant-2/)
+  [Deploying Vagrant on local](https://blog.nashtechglobal.com/creating-virtual-machines-using-vagrant-2/)
         
    Note: We will run Mesos-Master on base machine and Marathon as well as Mesos-Slave on VM.
        
@@ -108,31 +108,31 @@ So for deploying the Studio-9 on local, we have to understand the sequence of th
 After the deployment of above services, we will deploy the below services in the same sequence as they are listed below:
 
 ## Aries
-[Deploying Aries Service on local](https://github.com/knoldus/Studio-9/tree/mono-repo/codebase/aries/README.md)
+[Deploying Aries Service on local](https://github.com/NashTech-Labs/Studio-9/tree/mono-repo/codebase/aries/README.md)
 
 ## Argo
-[Deploying Argo Service on local](https://github.com/knoldus/Studio-9/tree/mono-repo/codebase/argo/README.md)
+[Deploying Argo Service on local](https://github.com/NashTech-Labs/Studio-9/tree/mono-repo/codebase/argo/README.md)
 
 ## Orion
-[Deploying Orion Service on loal](https://github.com/knoldus/Studio-9/tree/mono-repo/codebase/orion/README.md)
+[Deploying Orion Service on loal](https://github.com/NashTech-Labs/Studio-9/tree/mono-repo/codebase/orion/README.md)
 
 ## Cortex
-[Deploying Cortex Service on local](https://github.com/knoldus/Studio-9/tree/mono-repo/codebase/cortexREADME.md)
+[Deploying Cortex Service on local](https://github.com/NashTech-Labs/Studio-9/tree/mono-repo/codebase/cortexREADME.md)
 
 ## Pegasus
-[Deploying Pegasus Service on local](https://github.com/knoldus/Studio-9/tree/mono-repo/codebase/pegasus/README.md)
+[Deploying Pegasus Service on local](https://github.com/NashTech-Labs/Studio-9/tree/mono-repo/codebase/pegasus/README.md)
 
 ## Taurus
-[Deploying Taurus Service on local](https://github.com/knoldus/Studio-9/tree/mono-repo/codebase/taurus/README.md)
+[Deploying Taurus Service on local](https://github.com/NashTech-Labs/Studio-9/tree/mono-repo/codebase/taurus/README.md)
 
 ## UM-Service
-[Deploying UM-Service on local](https://github.com/knoldus/Studio-9/tree/mono-repo/codebase/user-management/README.md)
+[Deploying UM-Service on local](https://github.com/NashTech-Labs/Studio-9/tree/mono-repo/codebase/user-management/README.md)
 
 ## Baile
-[Deploying Baile Service on local](https://github.com/knoldus/Studio-9/tree/mono-repo/codebase/Baile/README.md)
+[Deploying Baile Service on local](https://github.com/NashTech-Labs/Studio-9/tree/mono-repo/codebase/Baile/README.md)
 
 ## Salsa
-[Deploying Salsa Service on local](https://github.com/knoldus/Studio-9/tree/mono-repo/codebase/salsa/README.md)
+[Deploying Salsa Service on local](https://github.com/NashTech-Labs/Studio-9/tree/mono-repo/codebase/salsa/README.md)
 
 --- 
 # How to Create a docker images ?
@@ -188,7 +188,7 @@ We'll be deploying Studio9 on local using a docker-compose file.
 - AWS S3 buckets accessible to AWS IAM
 - Docker should be installed on your local system.
 - If you don't have docker installed in your system, kindly refer to this [link](https://docs.docker.com/engine/install/ubuntu/)
-- After successfully installing Docker, clone the [Repository](https://github.com/knoldus/Studio-9.git).
+- After successfully installing Docker, clone the [Repository](https://github.com/NashTech-Labs/Studio-9.git).
 - Run the Docker Compose file by running the below command:
 
 ```sh docker-compose up -d```
@@ -231,9 +231,9 @@ For running the Studio-9 on local, we are using docker-compose.
 - Postgres service depends on postgres-db and will be accessible at 8080.
 
 ## 👨‍💻 Author
-* [Bhavya Aggarwal](bhavya@knoldus.com), CTO, [knoldus, Inc  (https://www.knoldus.com)](https://www.knoldus.com)
-* [Rahul Miglani](rahul.miglani@knoldus.com), VP-Engineering-DevOps, [knoldus, Inc  (https://www.knoldus.com)](https://www.knoldus.com)
-* [Abhishek Dwivedi](abhishek.dwivedi@knoldus.com), Sr. Software Consultant-DevOps, [knoldus, Inc  (https://www.knoldus.com)](https://www.knoldus.com)
+* [Bhavya Aggarwal](bhavya@nashtechglobal.com), CTO, [knoldus, Inc  (https://www.nashtechglobal.com)](https://www.nashtechglobal.com)
+* [Rahul Miglani](rahul.miglani@nashtechglobal.com), VP-Engineering-DevOps, [knoldus, Inc  (https://www.nashtechglobal.com)](https://www.nashtechglobal.com)
+* [Abhishek Dwivedi](abhishek.dwivedi@nashtechglobal.com), Sr. Software Consultant-DevOps, [knoldus, Inc  (https://www.nashtechglobal.com)](https://www.nashtechglobal.com)
 
 
 ## 🤝 Contributing
@@ -253,6 +253,6 @@ Give a ⭐️ if this project helped you!
 
 ## 📝 License
 
-Copyright © 2022 [knoldus, Inc  (https://www.knoldus.com)](https://www.knoldus.com).
+Copyright © 2022 [knoldus, Inc  (https://www.nashtechglobal.com)](https://www.nashtechglobal.com).
 <br />
-This project is licensed under the [MIT](https://github.com/knoldus/Studio-9/blob/master/LICENSE.md) license.
+This project is licensed under the [MIT](https://github.com/NashTech-Labs/Studio-9/blob/master/LICENSE.md) license.
