@@ -1,13 +1,13 @@
-[![GitHub stars](https://img.shields.io/badge/Stars-5-blue)](https://github.com/NashTech-Labs/Studio-9/stargazers)
-[![GitHub contributors](https://img.shields.io/badge/Contributors-6-yellow)](https://github.com/NashTech-Labs/Studio-9/graphs/contributors)
-[![MIT License](https://img.shields.io/github/license/digitalocean/nginxconfig.io.svg?color=blue)](https://github.com/NashTech-Labs/Studio-9/blob/master/LICENSE.md)
+[![GitHub stars](https://img.shields.io/badge/Stars-5-blue)](https://github.com/NashTech-Labs/Studio9/stargazers)
+[![GitHub contributors](https://img.shields.io/badge/Contributors-6-yellow)](https://github.com/NashTech-Labs/Studio9/graphs/contributors)
+[![MIT License](https://img.shields.io/github/license/digitalocean/nginxconfig.io.svg?color=blue)](https://github.com/NashTech-Labs/Studio9/blob/master/LICENSE.md)
 
 
 
-# What is Studio-9?
+# What is Studio9?
 > Studio9 is an open source platform for doing collaborative Data Management & AI/ML anywhere Whether your data is trapped in silos or you’re generating data at the edge, Studio9 gives you the flexibility to create AI and data engineering pipelines wherever your data is. And you can share your AI, Data, and Pipelines with anyone anywhere. With Studio9, you can achieve newfound agility to effortlessly move between compute environments, while all your data and your work replicates automatically to wherever you want.
 
-Below are described the major components of Studio-9. 
+Below are described the major components of Studio9. 
 ```
 1. *ORION* - A service further consisting of three components namely Job Dispatcher, Job Supervisor and Job Resource Cleaner. Job Dispatcher mainly forwards messages from RabbitMQ to the proper Job Supervisor, instantiating it for each new job request. Job Supervisor is responsible for instantiating job master for each new job which will have a new job supervisor setup. Job Resource Cleaner consumes messages from RabbitMQ and spins a new JobResourcesCleanerWorker for handling each message which then executes tasks for cleaning the resources. 
 
@@ -48,12 +48,12 @@ Below are described the major components of Studio-9.
 
 
 
-# Flow of Studio-9
-![Studio-9_flow](https://user-images.githubusercontent.com/86958663/171150086-22fb8783-bc07-45a0-a989-d100a3f50de8.png)
+# Flow of Studio9
+![Studio9_flow](https://user-images.githubusercontent.com/86958663/171150086-22fb8783-bc07-45a0-a989-d100a3f50de8.png)
 
 
 # How to deploy Studio9 on Local?
-So for deploying the Studio-9 on local, we have to understand the sequence of the services to be deployed. But before deployment of services we need to see some prerequisites for application.
+So for deploying the Studio9 on local, we have to understand the sequence of the services to be deployed. But before deployment of services we need to see some prerequisites for application.
   
   ## Prerequisites:
   - OS: Ubuntu 16.04 LTS - 4vCPUs and 16GB memory.
@@ -108,31 +108,31 @@ So for deploying the Studio-9 on local, we have to understand the sequence of th
 After the deployment of above services, we will deploy the below services in the same sequence as they are listed below:
 
 ## Aries
-[Deploying Aries Service on local](https://github.com/NashTech-Labs/Studio-9/tree/mono-repo/codebase/aries/README.md)
+[Deploying Aries Service on local](https://github.com/NashTech-Labs/Studio9/tree/mono-repo/codebase/aries/README.md)
 
 ## Argo
-[Deploying Argo Service on local](https://github.com/NashTech-Labs/Studio-9/tree/mono-repo/codebase/argo/README.md)
+[Deploying Argo Service on local](https://github.com/NashTech-Labs/Studio9/tree/mono-repo/codebase/argo/README.md)
 
 ## Orion
-[Deploying Orion Service on loal](https://github.com/NashTech-Labs/Studio-9/tree/mono-repo/codebase/orion/README.md)
+[Deploying Orion Service on loal](https://github.com/NashTech-Labs/Studio9/tree/mono-repo/codebase/orion/README.md)
 
 ## Cortex
-[Deploying Cortex Service on local](https://github.com/NashTech-Labs/Studio-9/tree/mono-repo/codebase/cortexREADME.md)
+[Deploying Cortex Service on local](https://github.com/NashTech-Labs/Studio9/tree/mono-repo/codebase/cortexREADME.md)
 
 ## Pegasus
-[Deploying Pegasus Service on local](https://github.com/NashTech-Labs/Studio-9/tree/mono-repo/codebase/pegasus/README.md)
+[Deploying Pegasus Service on local](https://github.com/NashTech-Labs/Studio9/tree/mono-repo/codebase/pegasus/README.md)
 
 ## Taurus
-[Deploying Taurus Service on local](https://github.com/NashTech-Labs/Studio-9/tree/mono-repo/codebase/taurus/README.md)
+[Deploying Taurus Service on local](https://github.com/NashTech-Labs/Studio9/tree/mono-repo/codebase/taurus/README.md)
 
 ## UM-Service
-[Deploying UM-Service on local](https://github.com/NashTech-Labs/Studio-9/tree/mono-repo/codebase/user-management/README.md)
+[Deploying UM-Service on local](https://github.com/NashTech-Labs/Studio9/tree/mono-repo/codebase/user-management/README.md)
 
 ## Baile
-[Deploying Baile Service on local](https://github.com/NashTech-Labs/Studio-9/tree/mono-repo/codebase/Baile/README.md)
+[Deploying Baile Service on local](https://github.com/NashTech-Labs/Studio9/tree/mono-repo/codebase/Baile/README.md)
 
 ## Salsa
-[Deploying Salsa Service on local](https://github.com/NashTech-Labs/Studio-9/tree/mono-repo/codebase/salsa/README.md)
+[Deploying Salsa Service on local](https://github.com/NashTech-Labs/Studio9/tree/mono-repo/codebase/salsa/README.md)
 
 --- 
 # How to Create a docker images ?
@@ -188,7 +188,7 @@ We'll be deploying Studio9 on local using a docker-compose file.
 - AWS S3 buckets accessible to AWS IAM
 - Docker should be installed on your local system.
 - If you don't have docker installed in your system, kindly refer to this [link](https://docs.docker.com/engine/install/ubuntu/)
-- After successfully installing Docker, clone the [Repository](https://github.com/NashTech-Labs/Studio-9.git).
+- After successfully installing Docker, clone the [Repository](https://github.com/NashTech-Labs/Studio9.git).
 - Run the Docker Compose file by running the below command:
 
 ```sh docker-compose up -d```
@@ -208,10 +208,10 @@ or
 NOTE: Use the above commands in the directory where the docker compose file exists.
 
 ## Explanation of Docker Compose
-For running the Studio-9 on local, we are using docker-compose. 
-- We are using a single network i.e. 'studio9' for all the services that'll run for studio-9.
-- Here we have 17 services that will be deployed on local machine to run the Studio-9.
-- There are four volumes being used in Studio-9, three for elastic-search and one for mongoDB.
+For running the Studio9 on local, we are using docker-compose. 
+- We are using a single network i.e. 'studio9' for all the services that'll run for Studio9.
+- Here we have 17 services that will be deployed on local machine to run the Studio9.
+- There are four volumes being used in Studio9, three for elastic-search and one for mongoDB.
 - The elastic-search master node is accessible at the port 9200.
 - Kibana service will run after the Elastic-search nodes are up and will be accessible at port 5601.
 - Mongo express service depends on mongo and will be accessible at 8081.
@@ -227,7 +227,7 @@ For running the Studio-9 on local, we are using docker-compose.
 - UM service depends on Mongo and will be accessible at 9000.
 - Baile service depends on Mongo, UM service, Aries, Cortex, SQL-server and Zookeeper and will be accessible at 9000.
 - SQL-Server depends on UM Service and will be accessible at 9000.
-- Salsa service is responsible for the UI of Studio-9 and it depends on Baile with port 80.
+- Salsa service is responsible for the UI of Studio9 and it depends on Baile with port 80.
 - Postgres service depends on postgres-db and will be accessible at 8080.
 
 ## 👨‍💻 Author
@@ -255,4 +255,4 @@ Give a ⭐️ if this project helped you!
 
 Copyright © 2022 [knoldus, Inc  (https://www.nashtechglobal.com)](https://www.nashtechglobal.com).
 <br />
-This project is licensed under the [MIT](https://github.com/NashTech-Labs/Studio-9/blob/master/LICENSE.md) license.
+This project is licensed under the [MIT](https://github.com/NashTech-Labs/Studio9/blob/master/LICENSE.md) license.
